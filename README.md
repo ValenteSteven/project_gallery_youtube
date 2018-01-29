@@ -1,27 +1,13 @@
-# connect-dtabase
+Pour lancer le projet, voici la demarche à suivre :
 
-> connexion firebase pour manipuler objet
+- en ligne de commande, se rendre dans le repertoire du projet.
+- lancer la commande npm install
+- lancer la commande npm run dev
 
-## Build Setup
+voici les fonctinnalités qui ont été réalisé :
 
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run all tests
-npm test
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+  - sauvegarde des videos dans une base de données firebase ( "Url", "description", "id" de la video de youtube, "idByTime" pour pouvoir ordonner les videos, "titre") 
+  - ajout de video en cherchant le titre et la description directement depuis youtube, on doit juste donner le lien de la video
+  - suppression de video
+  - modification du titre ou de la description d'une video ( sans impact sur youtube ) 
+  - pagination
