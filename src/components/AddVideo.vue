@@ -28,7 +28,8 @@ export default {
           Url: '',
           nom: '',
           id:'',
-          description:''
+          description:'',
+          idByTime : ''
       }
     }
   },
@@ -44,12 +45,14 @@ export default {
       var reponse = JSON.parse(req.responseText)
       this.newVideo.description = reponse.items[0].snippet.description;
       this.newVideo.nom = reponse.items[0].snippet.title;
+      this.newVideo.idByTime = Date.now().toString();
 
       refVideos.push(this.newVideo);
       this.newVideo.nom = '';
       this.newVideo.Url = '';
       this.newVideo.id = '';
       this.newVideo.description = '';
+      
 
       this.show();
     },
